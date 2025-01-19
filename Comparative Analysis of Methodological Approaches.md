@@ -1,6 +1,6 @@
 # Comparative Analysis of Methodological Approaches
 
-* The winner is Methodology A so far * 
+**The current winner is Methodology A**
 
 ## 1. Comprehensive Assessment
 
