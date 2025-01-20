@@ -60,32 +60,45 @@
 
 ---
 
-### **4. Exploratory Data Analysis (EDA)**
-#### **4.1 Data Quality Assessment**
-- Identify and remove corrupted or low-quality images.
-- Check for missing or inconsistent labels.
 
-#### **4.2 Class Distribution Analysis**
-- Visualize the distribution of pneumonia vs. normal cases.
-- Address class imbalance using oversampling or weighted loss functions.
+---
 
-#### **4.3 Image Characteristics**
-- Analyze resolution, brightness, and contrast.
-- Identify common artifacts (e.g., noise, rotations, occlusions).
+### **Summary of Robustness Measures**
+| **Aspect**                  | **Actions Taken**                                                                 | **Impact**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Dataset Quality**         | Removed low-quality images, verified labels, automated quality checks.            | Ensures high-quality, reliable training data.                              |
+| **Class Imbalance**         | Oversampled minority class, used weighted loss functions.                         | Ensures balanced performance across classes.                               |
+| **Image Quality**           | Standardized resolution, applied Z-score normalization, data augmentation.        | Ensures consistent input format and improves robustness to variations.     |
+| **Metadata Insights**       | Analyzed correlations between metadata (e.g., age, gender) and labels.            | Reduces bias and improves generalization.                                  |
+| **Outliers and Anomalies**  | Identified and removed outliers using statistical methods or anomaly detection.   | Ensures the dataset represents typical cases.                              |
+| **Statistical Insights**    | Computed summary statistics (e.g., mean, standard deviation) for pixel values.    | Guides normalization strategies and feature scaling.                       |
+| **Visualization Insights**  | Used visualization tools (e.g., heatmaps, attention maps) to confirm patterns.    | Highlights important regions and guides model training.                    |
+| **Diversity**               | Combined multiple datasets, ensured demographic and equipment diversity.          | Reduces bias and improves generalization.                                  |
+| **Cross-Validation**        | Used k-fold cross-validation to assess model performance across data subsets.     | Ensures consistent performance across different data splits.               |
+| **Cross-Institutional Validation** | Validated the model across multiple institutions with diverse patient populations. | Confirms generalizability to different clinical settings.                  |
+| **Real-World Testing**      | Deployed the model in supervised clinical settings for real-world testing.        | Ensures practical reliability and alignment with clinical needs.           |
+| **Explainability**          | Used Grad-CAM, LIME, SHAP, and attention maps for transparent decision-making.    | Builds clinician trust and ensures transparency.                           |
+| **Uncertainty Quantification** | Monte Carlo Dropout, ensemble methods, out-of-distribution detection.             | Flags ambiguous cases and prevents incorrect predictions.                  |
+| **Continuous Monitoring**   | Automated performance monitoring, periodic recalibration, model updates.          | Maintains high performance and adapts to evolving data.                    |
 
-#### **4.4 Patient Demographics**
-- Explore age, gender, and geographic distribution.
-- Ensure diversity to improve model generalizability.
+---
 
-#### **4.5 Pathology Distribution**
-- Examine the prevalence of co-occurring pathologies (e.g., effusion, consolidation).
-- Assess the impact of multi-pathology cases on model performance.
+### **Key Insights from EDA Accuracy Analysis**
+1. **Class Imbalance**:
+   - Addressed by oversampling and weighted loss functions to ensure balanced performance.
+2. **Corrupted or Mislabeled Images**:
+   - Removed corrupted images and corrected mislabeled data to improve dataset quality.
+3. **Image Quality Issues**:
+   - Standardized resolution and applied normalization to ensure consistent input format.
+4. **Metadata Insights**:
+   - Used metadata (e.g., age, gender) to reduce bias and improve generalization.
+5. **Outliers and Anomalies**:
+   - Identified and removed outliers to ensure the dataset represents typical cases.
+6. **Statistical Insights**:
+   - Computed pixel value statistics to guide normalization and feature scaling.
+7. **Visualization Insights**:
+   - Used visualizations to confirm patterns and highlight important regions.
 
-#### **4.6 EDA Visualizations**
-- Class Distribution: Pie charts or bar plots.
-- Image Examples: Sample images from each class with annotations.
-- Pixel Intensity Distribution: Histograms of pixel values.
-- Pathology Overlap: Heatmaps or Venn diagrams.
 
 ---
 
