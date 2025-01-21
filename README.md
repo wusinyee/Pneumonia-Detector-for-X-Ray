@@ -26,5 +26,5 @@ Advanced deep learning system for automated pneumonia detection from chest X-ray
 | Processing Time | 2.3s |
 | AUC-ROC | 0.982 |
 
-
+See the full project ontline: <https://github.com/wusinyee/Pneumonia-Detector-for-X-Ray/blob/039ecb433e616be465b7512bcb632097f395c831/Outline_Pneumonia_Detection_Project.md>
 
