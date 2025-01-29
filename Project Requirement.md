@@ -1,4 +1,4 @@
-# Revised PneumoSense Project Requirements
+# Project Requirements
 
  **Individual and cost-optimized**
 
