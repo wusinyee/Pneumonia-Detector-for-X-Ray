@@ -1,10 +1,9 @@
 # **Pneumonia Detector: Deep Learning Project**
 
 ## The Problem it is Solving
-- Pneumonia kills 2.5 million people annually
+- Pneumonia kills 2.5 million people annually, and 30% of pneumonia cases are initially missed
 - Rural areas wait 24-72 hours for X-ray results
 - Hospitals face severe radiologist shortages
-- 30% of pneumonia cases are initially missed
 
 ## Why It Is Different
 
